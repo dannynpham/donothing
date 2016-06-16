@@ -1,0 +1,37 @@
+.d0, .d1, .d2, .d3 {
+    font-size: 16pt;
+    font-family: "lucida handwriting","comic sans ms",cursive;
+    color: #7777DD;
+}
+
+.d0, .d1, .d2, .d3, .s0, .s1, .s2, .s3, .u0, .u1, .u2, .u3, .w0, .w1, .w2, .w3, .v0, .v1, .v2, .v3 {
+    -webkit-appearance: none;
+    outline: none;
+    border: solid 0 #fff;
+    text-align: center;
+    margin: 0;
+    width: 24pt;
+}
+
+.f0, .f1, .f2, .f3, .g0, .g1, .g2, .g3 {
+  border-top: #666699 solid 2px;
+}
+
+.e0, .e1, .e2, .e3, .g0, .g1, .g2, .g3, .i0, .i1, .i2, .i3 {
+  border-left: #666699 solid 2px;
+}
+
+.c0, .c1, .c2, .c3, .e0, .e1, .e2, .e3, .f0, .f1, .f2, .f3, .g0, .g1, .g2, .g3, .h0, .h1, .h2, .h3, .i0, .i1, .i2, .i3 {
+    width: 24pt;
+    height: 25pt;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18pt;
+    font-family: times,serif;
+}
+
+.t {
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-right: #666699 solid 2px;
+}
