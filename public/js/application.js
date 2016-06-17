@@ -25,7 +25,7 @@ $(document).ready(function() {
   }
 
   $(document).mousemove(function(event){
-    $("#ricka").css({left:event.pageX-60, top:event.pageY-60});
+    $("#ricka").css({left:event.pageX-70, top:event.pageY-70});
     $("#video").get(0).currentTime = 0;
     ricky();
   });
