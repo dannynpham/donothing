@@ -1,0 +1,45 @@
+body {
+  background: black;
+}
+
+video.fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+#ricka {
+  height: 180px;
+  position: absolute;
+}
+
+#ricky {
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  width: 55%;
+}
+
+#title {
+    color: white;
+    font-style: oblique;
+    font-size: 40pt;
+    position: absolute;
+    left: 35%;
+    text-shadow: -5px 0 3px black, 0 5px 3px black, 5px 0 3px black, 0 -5px 3px black;
+}
+
+#end {
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-style: oblique;
+    font-size: 40pt;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
