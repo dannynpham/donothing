@@ -38,8 +38,25 @@ video.fullscreen {
 #end {
     text-align: center;
     margin: 10px;
-    color: white;
+    color: #0B9CC5;
     font-style: oblique;
     font-size: 40pt;
     text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+button {
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 15px 25px 15px 25px;
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
 }
