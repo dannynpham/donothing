@@ -1,7 +1,54 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  function getRandomPosition(element) {
+    var sizes = [40,50,60,70,90,110,125,140,160,180]
+    var randomX = Math.floor(Math.random()*$(document).height());
+    var randomY = Math.floor(Math.random()*$(document).width());
+    var randomTilt = (Math.floor(Math.random()*300)+1);
+    var randomSz = sizes[Math.floor(Math.random()*sizes.length)];
+    return [randomX,randomY,randomTilt,randomSz];
+  }
+
+  function ricky() {
+    var img = document.createElement('img');
+    img.setAttribute("style", "position:absolute;");
+    img.setAttribute("src", "/media/ricky.png");
+    img.setAttribute("class", "rik");
+    document.body.appendChild(img);
+    var xy = getRandomPosition(img);
+    img.style.top = xy[0] + 'px';
+    img.style.left = xy[1] + 'px';
+    img.style.height = xy[3]+'px';
+    img.style.width = (xy[3]*0.84)+'px';
+    img.style.transform = "rotate("+xy[2]+"deg)";
+    return img;
+  }
+
+  $('#ricky').hide();
+  $('#end').hide();
+
+  document.addEventListener("mousemove", function(event) {
+    $("#video").get(0).currentTime = 0;
+    ricky();
+  });
+
+  $(document).mousemove(function(event){
+    $("#ricka").css({left:event.pageX-70, top:event.pageY-70});
+  });
+
+  var callback = function () {
+    $('.rik').remove();
+    $('#title').remove();
+    $('#video').remove();
+    $('#end').show();
+    $('#ricky').show();
+  }
+  $("#video").on("ended", callback);
+});
+
+document.addEventListener("keypress", function(event) {
+  if (event.keyCode === 48) {
+    $("#video").get(0).currentTime += 20;
+    $('.rik').remove();
+  }
 });

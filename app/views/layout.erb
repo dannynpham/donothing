@@ -11,14 +11,18 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
-
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <script src="/js/jquery.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Do Nothing</title>
 </head>
 <body>
-  <%= erb :'/board' %>
-  <%= yield %>
+  <div>
+  <h1 id="title"> Resistance is Futile! </h1>
+  <h1 id='end'> You've been ROLLEDRICKED. <i class='em em-sunglasses'></i></h1>
+  <img id="ricka" src='/media/ricka.gif'>
+  <img id="ricky" src='/media/rickpic.jpg'>
+  <video id="video" class="fullscreen" src="/media/rickrollvideo.mp4" autoplay/>
 </body>
 </html>
